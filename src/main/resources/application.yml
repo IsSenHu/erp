@@ -1,0 +1,85 @@
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/erp
+    username: root
+    password: 521428
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
+#######Redis����######
+#  redis:
+#  #Redis���ݿ�������Ĭ��Ϊ0��
+#    database: 1
+#  #Redis�����ַ
+#    host: 127.0.0.1
+#  #Redis�������Ӷ˿�
+#    port: 6379
+#  #Redis�������������루Ĭ��Ϊ�գ�
+#    password:
+#    jedis:
+#      pool:
+#      #���ӳ������������ʹ�ø�ֵ��ʾû�����ƣ�
+#        max-active: 1000
+#      #���ӳ���������ȴ�ʱ�䣨ʹ�ø�ֵ��ʾû�����ƣ�
+#        max-wait: -1
+#      #���ӳ������Ŀ�������
+#        max-idle: 10
+#      #���ӳ�����С�Ŀ�������
+#        min-idle: 2
+#  #���ӳ�ʱʱ��
+#    timeout: 5000
+######RabbitMQ######
+#  rabbitmq:
+#    addresses: 127.0.0.1
+#    port: 5672
+#    username: husen
+#    password: 521428sly
+#    virtual-host: /
+#    listener:
+#      simple:
+#      #��С��Ϣ�����߳���
+#        concurrency: 2
+#      #�����Ϣ�����߳���
+#        max-concurrency: 2
+######thymeleaf######
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+server:
+  port: 12307
+######�����ʼ�######
+#  mail:
+#    host: smtp.qq.com
+#    username: 1178515826@qq.com
+#    password: cbdawoqticnyhajc
+#    port: 587
+#    default-encoding: UTF-8
+######RabbitMQ######
+#  rabbitmq:
+#    addresses: 127.0.0.1
+#    port: 5672
+#    username: husen
+#    password: 521428sly
+#    virtual-host: /
+#    listener:
+#      simple:
+#      #��С��Ϣ�����߳���
+#        concurrency: 2
+#      #�����Ϣ�����߳���
+
+
+
+
+
